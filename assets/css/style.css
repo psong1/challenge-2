@@ -6,11 +6,12 @@
 
 nav.header {
     color:#fff;
-    min-height: 70vh;
+    min-height: 85vh;
     width: 100%;
     background-image: linear-gradient(rgba(4,15,20,0.7), rgba(4,10,20,0.7)), url("/assets/images/USNWR_Arch\ \(1\).jpg");
     background-size: cover;
     background-position: center;
+    margin-bottom: 25px;
 }
 
 ul {
@@ -33,10 +34,111 @@ li {
     text-decoration: none;
 }
 
-section {
-    position: absolute;
+.nav-links ul li::after {
+    content: '';
+    width: 0;
+    height: 2px;
+    background: #fff;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
 }
 
-h2 {
-    float: left;
+.nav-links ul li:hover::after {
+    width: 100%;
 }
+
+.nav-links ul li:active {
+    /* either change color or add text decoration if needed*/
+}
+
+.text-box {
+    width: 70%;
+    color: #fff;
+    position: absolute;
+    top: 40%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.text-box h1 {
+    font-size: 50px;
+    margin: 10px;
+}
+
+.text-box p {
+    font-size: 24px;
+}
+
+.row, summary {
+    display: flex;
+
+}
+
+summary {
+    margin-left: 10px;
+}
+
+.about {
+    font-size: 30px;
+    border-right: 5px solid #000;
+    text-align: center;
+}
+
+img {
+    display: block;
+    height: 300px;
+    width: 300px;
+    margin: 20px 15px;
+}
+
+.projects {
+    font-size: 40px;
+    margin: auto;
+    padding: 100px 0px 0px;
+    border-bottom: 5px solid #000;
+    flex: 2;
+    text-align: center;
+}
+
+.grid {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.project-card {
+    border: 1px solid #000;
+    margin: 30px 20px;
+    height: 300px;
+    height: 350px;
+    width: 350px;
+    background: #68666649;
+}
+
+.card-header {
+    margin-bottom: 10px;
+}
+
+.project-card, .project-card p {
+    text-align: center;
+}
+
+.fa-brands {
+    position: relative;
+    top: auto;
+    left: 0px;
+}
+
+@media(max-width:768px) {
+    .text-box h1 {
+        font-size: 25px;
+    }
+
+    .text-box p, li{
+        font-size: 12px;
+    }
+}
+
