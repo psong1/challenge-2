@@ -9,26 +9,26 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Poppins&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/6eb91db0db.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="/assets/script.js"></script>
     <title>Paul Song</title>
 </head>
 
 <body>
     <header>
         <nav class="header">
-            <div class="nav-links">
-                <i class="fa-sharp fa-solid fa-xmark"></i>
+            <div class="nav-links" id="navlinks">
+                <i class="fa-sharp fa-solid fa-xmark" onclick="hideMenu()"></i>
             <ul>
                 <li><a href="#about">About</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
             </div>
-
+                <i class="fa-solid fa-bars" onclick="showMenu()"></i>
             <div class="text-box">
                 <h1>PAUL SONG</h1>
                     <p>Full Stack Developer Student</p>
             </div>
-            <i class="fa-solid fa-bars"></i>
         </nav>
     </header>
     
@@ -72,7 +72,7 @@
                 </div>
             </article>
 
-            <!-- add background img for each card -->
+            <!-- add background img of projects for each card as they're completed -->
             <article class="project-card">
             <h2 class="card-header">Placeholder #1</h2>
                 <p>This is currently a placeholder for future projects. It will be filled when I complete projects and deploy them.</p>
