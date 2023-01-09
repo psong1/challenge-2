@@ -8,7 +8,7 @@ nav.header {
     color:#fff;
     min-height: 85vh;
     width: 100%;
-    background-image: linear-gradient(rgba(4,15,20,0.7), rgba(4,10,20,0.7)), url("/assets/images/USNWR_Arch\ \(1\).jpg");
+    background-image: linear-gradient(rgba(4,15,20,0.7), rgba(4,10,20,0.7)), url("../images/USNWR_Arch\ \(1\).jpg");
     background-size: cover;
     background-position: center;
     margin-bottom: 25px;
