@@ -123,6 +123,14 @@ img {
     background: #68666649;
 }
 
+.project-2 {
+    background-image: linear-gradient(rgba(4,15,20,0.7), rgba(4,10,20,0.7)), url('../images/My\ project-1.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+}
+
 .card-header {
     margin-bottom: 10px;
 }
@@ -137,14 +145,13 @@ img {
 }
 
 .card-link a {
-    color: #000;
+    color: white;
     text-decoration: none; 
 }
 
 .card-link a:hover {
    font-weight: bold;
    font-size: larger;
-   color: #0000ff;
    transition: 1s;
 }
 
